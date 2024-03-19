@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="kobe's homepage">
+    <main>
+        <div class="content">
+            <p class="kobe-text">kobe</p>
+            <div class="projects">
+                <p>projects</p>
+                <ul>
+                    <li>taskconvey</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</Layout>
+<style>
+    main {
+        display: flex;             
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh; 
+        margin: 0; 
+    }
+
+    .content {
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .projects ul {
+        /* list-style-type: none; */
+        padding: 0;
+    }
+
+    body, html {
+        margin: 0;
+        height: 100%;
+        font-family: 'JetBrains Mono', monospace;
+        color: white;
+        background: black;
+    }
+
+    .kobe-text {
+        border-bottom: 1px solid white;
+        padding-bottom: 0.5rem
+    }
+</style>
